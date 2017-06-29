@@ -1,15 +1,10 @@
-;; These customizations change the way emacs looks and disable/enable
-;; some user interface elements. Some useful customizations are
-;; commented out, and begin with the line "CUSTOMIZE". These are more
-;; a matter of preference and may require some fiddling to match your
-;; preferences
+;; Get rid of bars (except status bar) and add column numbers to
+;; status bar
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Show line and column numbers
-;;(global-linum-mode)
 (setq column-number-mode t)
 
 ;; Color Themes
@@ -21,13 +16,7 @@
 (add-to-list 'load-path "~/.emacs.d/themes")
 (load-theme 'misterioso t)
 
-;; increase font size for better readability
-(set-face-attribute 'default nil :height 140)
-
-;; Uncomment the lines below by removing semicolons and play with the
-;; values in order to set the width (in characters wide) and height
-;; (in lines high) Emacs will have whenever you start it
-;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 80) (height . 50)))
+;; Start at fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; These settings relate to how emacs interacts with your operating system
@@ -53,7 +42,7 @@
 ;; No cursor blinking, it's distracting
 (blink-cursor-mode 0)
 
-;; full path in title bar
+;; Full path in title bar. (Do I need a title bar?)
 (setq-default frame-title-format "%b (%f)")
 
 ;; don't pop up font menu

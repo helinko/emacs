@@ -43,16 +43,15 @@
                                                "backups"))))
 (setq auto-save-default nil)
 
-
-;; comments
-(defun toggle-comment-on-line ()
-  "comment or uncomment current line"
-  (interactive)
-  (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
-(global-set-key (kbd "C-;") 'toggle-comment-on-line)
+;; ;; comments
+;; (defun toggle-comment-on-line ()
+;;   "comment or uncomment current line"
+;;   (interactive)
+;;   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
+;; (global-set-key (kbd "C-;") 'toggle-comment-on-line)
 
 ;; yay rainbows!
-(global-rainbow-delimiters-mode t)
+;;(global-rainbow-delimiters-mode t)
 
 ;; use 2 spaces for tabs
 ;; (defun die-tabs ()
@@ -64,3 +63,15 @@
 
 ;;(setq electric-indent-mode nil)
 
+;; Changes all yes/no questions to y/n type
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; shell scripts
+(setq-default sh-basic-offset 2)
+(setq-default sh-indentation 2)
+
+;; No need for ~ files when editing
+(setq create-lockfiles nil)
+
+;; Go straight to scratch buffer on startup
+(setq inhibit-startup-message t)

@@ -4,3 +4,7 @@
 (setq truncate-lines 'XS1)
 
 
+;; increase font size for better readability
+(set-face-attribute 'default nil :height 140)
+
+
