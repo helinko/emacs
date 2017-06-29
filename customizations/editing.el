@@ -25,6 +25,18 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph
+(defun unfill-paragraph (&optional region)
+  "Takes a multi-line paragraph and makes it into a single line of text."
+  (interactive (progn (barf-if-buffer-read-only) '(t)))
+  (let ((fill-column (point-max))
+	;; This would override `fill-column' if it's an integer.
+	(emacs-lisp-docstring-fill-column t))
+    (fill-paragraph nil region)))
+
+;; Add a key for it
+(define-key global-map "\M-Q" 'unfill-paragraph)
+
 ;; Don't use hard tabs
 ;; (setq-default indent-tabs-mode nil)
 
@@ -62,6 +74,10 @@
 ;;   (keyboard-quit))
 
 ;;(setq electric-indent-mode nil)
+
+(global-visual-line-mode t)
+
+;(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)

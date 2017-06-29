@@ -1,22 +1,23 @@
 Things to find out about emacs:
 
-What to do with the title bar?
+(setq-default word-wrap t) or visual-line-mode
+Find a way to disable line numbers, but still see wrapped lines (and indicating the beginning rather than every wrap). 
 
-Are my ido settings reasonable? How to
-add a file when the new name matches with an old one?
+Highlight current line (was unusable with the current theme). Setting in editing.el.
 
-Some way to deal with too long lines. The line length probably has to
-be dependent of the machine I'm using.
+Figuring out a org-mode (bullet points and highlighting).
 
-Look into hippie-expand
+Are my ido settings reasonable? How to add a file when the new name matches with an old one?
 
-Highlight current line (was unusable with the current theme). Settiung in editing.el.
-
-Backup files. These are turned on in editing.el but there are still ~
-files.
+Look into hippie-expand.
 
 Commenting regions.
 
 The way these settings are divided into files doesn't make much sense.
 
 'Import' colors from regular shell to M-x shell.
+
+Backup files. These are turned on in editing.el but there are still ~ files.
+
+What to do with the title bar?
+
