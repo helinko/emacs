@@ -18,30 +18,30 @@
 ;;     (git-bash-windows-setup)
 ;; )
 
-;; (defun udf-windows-setup ()
-;;   (setq explicit-shell-file-name "C:\\cygwin64\\bin\\bash.exe")
-;;   (setq shell-file-name "bash")
-;;   (setq explicit-bash.exe-args '("--login"))
-;;   (setenv "SHELL" shell-file-name)
-;;   (setenv "PATH" (concat "C:\\cygwin\\bin" ";" (getenv "PATH")))
-;;   (setenv "PATH" (concat  ".;" (getenv "PATH")))
-;;   (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
-
-;; (if (eq system-type 'windows-nt)
-;;     (udf-windows-setup))
-
-
 (defun udf-windows-setup ()
-  (setq explicit-shell-file-name "C:\\Program Files\\Git\\bin\\sh.exe")
-  (setq shell-file-name "sh")
-  (setq explicit-bash.exe-args '("--noediting" "--login" "-i"))
+  (setq explicit-shell-file-name "C:\\cygwin64\\bin\\bash.exe")
+  (setq shell-file-name explicit-shell-file-name)
+  (setq explicit-bash.exe-args '("--login" "-i"))
   (setenv "SHELL" shell-file-name)
-  (setenv "PATH" (concat "C:\\Program Files\\Git" ";" (getenv "PATH")))
+  (setenv "PATH" (concat "C:\\cygwin64\\bin" ";" (getenv "PATH")))
   (setenv "PATH" (concat  ".;" (getenv "PATH")))
   (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
 
 (if (eq system-type 'windows-nt)
     (udf-windows-setup))
+
+
+;; (defun udf-windows-setup ()
+;;   (setq explicit-shell-file-name "C:\\Program Files\\Git\\bin\\sh.exe")
+;;   (setq shell-file-name "sh")
+;;   (setq explicit-bash.exe-args '("--noediting" "--login" "-i"))
+;;   (setenv "SHELL" shell-file-name)
+;;   (setenv "PATH" (concat "C:\\Program Files\\Git" ";" (getenv "PATH")))
+;;   (setenv "PATH" (concat  ".;" (getenv "PATH")))
+;;   (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
+
+;; (if (eq system-type 'windows-nt)
+;;     (udf-windows-setup))
 
 
 

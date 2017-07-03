@@ -7,7 +7,7 @@
 
 (setq column-number-mode t)
 ;; Line numbers as a temporary thing. 
-(global-linum-mode t)
+;;(global-linum-mode t)
 
 
 ;; Color Themes
