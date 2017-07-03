@@ -98,30 +98,17 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-;; These customizations make it easier for you to navigate files,
-;; switch buffers, and choose options from the minibuffer.
 (load "navigation.el")
-
-;; These customizations change the way emacs looks and disable/enable
-;; some user interface elements
 (load "ui.el")
-
-;; These customizations make editing a bit nicer.
 (load "editing.el")
 
-;; For editing lisps
 (load "elisp-editing.el")
-
-;; Language-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
 
-;; Environment-specific (have to see about the hooks later)
 (load "env.el")
-
-;; Command-line stuff etc.
 (load "interop.el")
-
+(load "erc.el")
 ;; Open .v files with Proof General's Coq mode
 ;;(load "~/.emacs.d/lisp/PG/generic/proof-site")
 
@@ -135,10 +122,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(coffee-tab-width 2)
- '(package-selected-packages
-   (quote
-    (smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit))))
+ '(coffee-tab-width 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

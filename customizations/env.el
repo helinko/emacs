@@ -5,7 +5,7 @@
 
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 130)
 
 ;; (defun git-bash-windows-setup () (interactive)
 ;;   (setq explicit-shell-file-name
