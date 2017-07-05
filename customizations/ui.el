@@ -7,7 +7,7 @@
 
 (setq column-number-mode t)
 ;; Line numbers as a temporary thing. 
-;;(global-linum-mode t)
+(global-linum-mode t)
 
 
 ;; Color Themes
@@ -20,6 +20,11 @@
 (load-theme 'misterioso t)
 ;; Tired of losing the cursor
 (set-cursor-color "#a52a2a")
+
+;; This would likely be better for the cursor problem:
+;; Highlight current line
+;;(global-hl-line-mode 1)
+
 
 ;; Start at fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))

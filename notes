@@ -1,23 +1,34 @@
-Things to find out about emacs:
+* Things to find out about emacs
 
+** Wrapped lines
 (setq-default word-wrap t) or visual-line-mode
-Find a way to disable line numbers, but still see wrapped lines (and indicating the beginning rather than every wrap). 
 
-Highlight current line (was unusable with the current theme). Setting in editing.el.
+Find a way to see wrapped lines, indicating the beginning of such line rather than every wrap. Or perhaps indicating when there are two logical lines with no empty line between them.
 
-Figuring out a org-mode (bullet points and highlighting).
+** Highlight current line
+This became unusable with the current theme. The setting is commented out in ui.el.
 
-Are my ido settings reasonable? How to add a file when the new name matches with an old one?
+** Learn org-mode
+*** Note-taking
+*** TODOs
 
-Look into hippie-expand.
+** Find out how to compose commands
+This might not exist on this general of a level. Perhaps to do something to 'the other window', I have to select it, do the thing and then select the original again. 
 
-Commenting regions.
+** IDO settings
+How to add a file when the new name matches with an old one?
 
-The way these settings are divided into files doesn't make much sense.
+** Look into hippie-expand
 
-'Import' colors from regular shell to M-x shell.
+** Commenting regions
+Not even sure what this was about when I made the note. Perhaps separate problems in elisp and latex?
 
-Backup files. These are turned on in editing.el but there are still ~ files.
+** Division of my emacs setting files
+The original structure doesn't make sense for me.
 
-What to do with the title bar?
+** Look into backup files
+These should be turned off in editing.el but there are still ~ files.
+
+** Title bar
+Not too important. I guess I need some place to drag the windows, anyways. 
 

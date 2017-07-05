@@ -56,5 +56,15 @@
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 
+;; Scroll up and down are kinda backwards in emacs lingo. Cursor will follow if it would be left outside of the screen, but will otherwise be left where it was.
+(global-set-key (kbd "C-å") 'scroll-down-line)
+(global-set-key (kbd "C-ö") 'scroll-up-line)
+
+;; At some point do these 'other window versions' too
+;(global-set-key (kbd "C-M-å") '(scroll-down-line))
+;(global-set-key (kbd "C-M-ö") 'scroll-up-line)
+
+
+
 ;; projectile everywhere!
 ;(projectile-global-mode)
