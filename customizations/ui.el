@@ -60,3 +60,5 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+(setq org-hide-leading-stars t)
