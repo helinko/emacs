@@ -1,5 +1,4 @@
-;; Binding for a quick git push
-
+;; Binding for a quick git push. I only use this for misc notes so no messages needed.
 (defun git-commit-and-push ()
   "Commit -a -m \"-\" and git push origin master "
   (interactive)
@@ -11,12 +10,9 @@
 	(shell-command "git push origin master"))
     )
   )
-
 (global-set-key (kbd "C-x p") 'git-commit-and-push)
 
 (global-set-key (kbd "<f1>") 'eshell)
-
-
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
