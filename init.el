@@ -59,6 +59,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    ;;
+    magit
     ;; project navigation
 ;    projectile
 
@@ -122,7 +124,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(coffee-tab-width 2))
+ '(coffee-tab-width 2)
+ '(package-selected-packages
+   (quote
+    (magit smex paredit ido-ubiquitous clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
