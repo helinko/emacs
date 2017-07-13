@@ -110,7 +110,8 @@
 
 (load "env.el")
 (load "interop.el")
-(load "erc.el")
+(load "erc-conf.el")
+(load "org-conf.el")
 ;; Open .v files with Proof General's Coq mode
 ;;(load "~/.emacs.d/lisp/PG/generic/proof-site")
 
