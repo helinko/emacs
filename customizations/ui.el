@@ -6,9 +6,6 @@
 (scroll-bar-mode -1)
 
 (setq column-number-mode t)
-;; Line numbers as a temporary thing. 
-;(global-linum-mode t)
-
 
 ;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
@@ -17,14 +14,14 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'misterioso t)
+(load-theme 'tomorrow-night-bright t)
+;(load-theme 'misterioso t)
 ;; Tired of losing the cursor
-(set-cursor-color "#a52a2a")
+;(set-cursor-color "#a52a2a")
 
 ;; This would likely be better for the cursor problem:
 ;; Highlight current line
-;;(global-hl-line-mode 1)
-
+(global-hl-line-mode 1)
 
 ;; Start at fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))

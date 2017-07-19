@@ -1,0 +1,62 @@
+
+;; ----- smex-history -----
+(
+ org-mode
+ revert-buffer
+ font-lock-mode
+ load-theme
+ set-variable
+ uncomment-region
+ comment-region
+)
+
+;; ----- smex-data -----
+(
+ (replace-string . 5)
+ (cider-jack-in . 16)
+ (imenu-add-menubar-index . 2)
+ (mouse-major-mode-menu . 2)
+ (imenu . 2)
+ (describe-mode . 1)
+ (preview-buffer . 1)
+ (preview-document . 4)
+ (search-forward . 10)
+ (where-is . 2)
+ (package-refresh-contents . 1)
+ (package-install . 5)
+ (buffer-menu . 1)
+ (rename-buffer . 2)
+ (rename-file . 1)
+ (comment-region . 59)
+ (complete-tag . 1)
+ (complete-symbol . 2)
+ (compile . 2)
+ (cider-refresh . 1)
+ (cider-restart . 1)
+ (uncomment-region . 10)
+ (list-packages . 10)
+ (elm-mode . 5)
+ (emacs-version . 1)
+ (csharp-mode . 1)
+ (delete-indentation . 1)
+ (shell . 9)
+ (load-theme . 67)
+ (eval-buffer . 15)
+ (make-directory . 1)
+ (package-list-packages . 1)
+ (text-mode . 3)
+ (global-linum-mode . 1)
+ (describe-key . 1)
+ (describe-variable . 3)
+ (customize-option . 1)
+ (toggle-truncate-lines . 2)
+ (set-variable . 3)
+ (org-mode . 25)
+ (dired . 2)
+ (visual-line-mode . 1)
+ (eshell . 1)
+ (html-mode . 1)
+ (flyspell-mode . 1)
+ (font-lock-mode . 4)
+ (revert-buffer . 1)
+)
