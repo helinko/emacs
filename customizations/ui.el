@@ -58,4 +58,3 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-

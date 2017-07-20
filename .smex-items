@@ -1,62 +1,34 @@
 
 ;; ----- smex-history -----
 (
- org-mode
- revert-buffer
- font-lock-mode
- load-theme
- set-variable
+ outline-toggle-children
+ outline-minor-mode
  uncomment-region
  comment-region
+ LaTeX-mode
+ outline-mode
+ set-buffer-file-coding-system
 )
 
 ;; ----- smex-data -----
 (
- (replace-string . 5)
- (cider-jack-in . 16)
- (imenu-add-menubar-index . 2)
- (mouse-major-mode-menu . 2)
- (imenu . 2)
- (describe-mode . 1)
- (preview-buffer . 1)
- (preview-document . 4)
- (search-forward . 10)
- (where-is . 2)
- (package-refresh-contents . 1)
- (package-install . 5)
- (buffer-menu . 1)
- (rename-buffer . 2)
- (rename-file . 1)
- (comment-region . 59)
- (complete-tag . 1)
- (complete-symbol . 2)
- (compile . 2)
- (cider-refresh . 1)
- (cider-restart . 1)
- (uncomment-region . 10)
- (list-packages . 10)
- (elm-mode . 5)
- (emacs-version . 1)
- (csharp-mode . 1)
- (delete-indentation . 1)
- (shell . 9)
- (load-theme . 67)
- (eval-buffer . 15)
- (make-directory . 1)
- (package-list-packages . 1)
- (text-mode . 3)
- (global-linum-mode . 1)
- (describe-key . 1)
- (describe-variable . 3)
- (customize-option . 1)
- (toggle-truncate-lines . 2)
- (set-variable . 3)
- (org-mode . 25)
- (dired . 2)
- (visual-line-mode . 1)
- (eshell . 1)
- (html-mode . 1)
- (flyspell-mode . 1)
- (font-lock-mode . 4)
- (revert-buffer . 1)
+ (eval-buffer . 1)
+ (org-mode . 4)
+ (replace-regexp . 23)
+ (package-list-packages . 3)
+ (revert-buffer . 7)
+ (new-frame . 1)
+ (delete-frame . 1)
+ (ansi-term . 1)
+ (rename-file . 4)
+ (whitespace-mode . 2)
+ (set-buffer-file-coding-system . 5)
+ (re-builder . 1)
+ (replace-string . 2)
+ (outline-mode . 2)
+ (LaTeX-mode . 2)
+ (outline-minor-mode . 3)
+ (outline-toggle-children . 10)
+ (comment-region . 1)
+ (uncomment-region . 1)
 )
