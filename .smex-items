@@ -1,7 +1,7 @@
 
 ;; ----- smex-history -----
 (
- outline-toggle-children
+ eww
  outline-minor-mode
  uncomment-region
  comment-region
@@ -31,4 +31,5 @@
  (outline-toggle-children . 10)
  (comment-region . 1)
  (uncomment-region . 1)
+ (eww . 1)
 )

@@ -7,6 +7,8 @@
 
 (setq column-number-mode t)
 
+(global-rainbow-delimiters-mode t)
+
 ;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
 ;; for a great explanation of emacs color themes.
