@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
- outline-toggle-children
- outline-minor-mode
- uncomment-region
- comment-region
- LaTeX-mode
+ package-list-packages
+ synosaurus-lookup
+ synosaurus-mode
+ package-autoremove
+ haskell-mode
+ org-mode
  outline-mode
- set-buffer-file-coding-system
 )
 
 ;; ----- smex-data -----
 (
  (eval-buffer . 1)
- (org-mode . 4)
+ (org-mode . 5)
  (replace-regexp . 23)
- (package-list-packages . 3)
+ (package-list-packages . 6)
  (revert-buffer . 7)
  (new-frame . 1)
  (delete-frame . 1)
@@ -25,10 +25,21 @@
  (set-buffer-file-coding-system . 5)
  (re-builder . 1)
  (replace-string . 2)
- (outline-mode . 2)
+ (outline-mode . 4)
  (LaTeX-mode . 2)
  (outline-minor-mode . 3)
  (outline-toggle-children . 10)
  (comment-region . 1)
  (uncomment-region . 1)
+ (eww . 5)
+ (shell . 1)
+ (dired . 1)
+ (mkdir . 1)
+ (package-autoremove . 2)
+ (html-autoview-mode . 1)
+ (toggle-read-only . 1)
+ (read-only-mode . 3)
+ (haskell-mode . 1)
+ (synosaurus-mode . 2)
+ (synosaurus-lookup . 4)
 )

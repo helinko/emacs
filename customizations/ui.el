@@ -7,6 +7,10 @@
 
 (setq column-number-mode t)
 
+;; There's no global mode for this, apparently it breaks some major modes.
+;; Now it should work on any programming language modes.
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
 ;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
 ;; for a great explanation of emacs color themes.
