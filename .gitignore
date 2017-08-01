@@ -13,3 +13,5 @@ backups
 eshell
 network-security.data
 server
+.smex-items
+url
