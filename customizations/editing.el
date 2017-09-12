@@ -70,7 +70,7 @@
 ;;(setq electric-indent-mode nil)
 
 (global-visual-line-mode t)
-
+(evil-mode 1)
 ;(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
 ;; Changes all yes/no questions to y/n type
