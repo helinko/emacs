@@ -24,8 +24,8 @@
 ;(set-cursor-color "#a52a2a")
 
 ;; Font in linux
-(when (eq system-type 'gnu/linux)
-  (set-face-attribute 'default nil :font "FreeMono"))
+;;(when (eq system-type 'gnu/linux)
+  ;;(set-face-attribute 'default nil :font "FreeMono"))
 
 ;; This would likely be better for the cursor problem:
 ;; Highlight current line
