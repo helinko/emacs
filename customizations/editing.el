@@ -31,8 +31,8 @@
 	(emacs-lisp-docstring-fill-column t))
     (fill-paragraph nil region)))
 
-;; Add a key for it
-(define-key global-map "\M-Q" 'unfill-paragraph)
+;; Add a key for it (this original is shadowed by dwm
+;;(define-key global-map "\M-Q" 'unfill-paragraph)
 
 ;; Don't use hard tabs
 ;; (setq-default indent-tabs-mode nil)
@@ -50,7 +50,6 @@
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Backup-Files.html
 (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
                                                "backups"))))
-(setq auto-save-default nil)
 
 ;; ;; comments
 ;; (defun toggle-comment-on-line ()
