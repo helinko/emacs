@@ -10,7 +10,7 @@
 	(shell-command "git push origin master"))
     )
   )
-(global-set-key (kbd "C-x p") 'git-commit-and-push)
+;;(global-set-key (kbd "C-x p") 'git-commit-and-push)
 
 (global-set-key (kbd "<f1>") 'eshell)
 ;; magit
